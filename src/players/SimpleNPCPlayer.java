@@ -18,7 +18,7 @@ public class SimpleNPCPlayer extends Player {
         } else if (shouldCall()) {
             call();
         } else if (shouldRaise()) {
-            raise(getGameState().getTableMinBet()); // Example: always raises the minimum bet
+            raise(getGameState().getTableMinBet() * 2); // Example: always raises twice the minimum bet
         } else if (shouldAllIn()) {
             allIn();
         }        

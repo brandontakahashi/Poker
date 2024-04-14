@@ -1,9 +1,6 @@
 package game;
 
-import players.ManualPlayer;
-import players.RandomPlayer;
-import players.SimpleNPCPlayer;
-import players.TemplatePlayer;
+import players.*;
 
 import java.util.*;
 
@@ -52,7 +49,7 @@ public class GameEngine {
 
         // create players here
 
-        //listPlayersRemainingGame.add(new ManualPlayer("Manual Player"));
+        listPlayersRemainingGame.add(new BrandonPlayer("BrandonNPC"));
         addSimpleNPCs(4);
         addRandomNPCs(0);
         addTempPlayers(0);
